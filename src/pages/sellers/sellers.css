@@ -1,0 +1,23 @@
+.home_header_left {
+    padding-top: 34px;
+}
+.home_header_left_title h2 {
+  color: rgb(0, 0, 0);
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.home_header_left_title p {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,683 @@
+.home_header {
+  display: flex;
+  align-items: start;
+  gap: 38px;
+  margin-bottom: 50px;
+}
+.home_header_left {
+  width: 100%;
+  max-width: 683px;
+}
+.home_header_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 58px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+
+  background: rgb(255, 255, 255);
+  padding: 0 20px 0 30px;
+}
+
+.home_header_search input {
+  width: 100%;
+  height: 100%;
+
+  color: #000;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.home_header_search input::placeholder {
+  color: rgb(176, 176, 176);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.search_descs {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.search_descs p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.search_descs span {
+  cursor: pointer;
+  color: rgb(253, 21, 72);
+}
+.home_header_search_wrapper {
+  margin-bottom: 50px;
+}
+
+.home_header_left_title h1 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.home_header_left_steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.home_header_left_steps div {
+  width: 33%;
+  border-radius: 14.23px;
+  padding: 14px;
+  background: linear-gradient(180deg, rgb(248, 157, 64), rgb(253, 21, 72) 100%);
+}
+
+.home_header_left_steps p {
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.last_orders_title {
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.last_orders_title h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.last_orders_title p {
+  color: rgb(87, 87, 87);
+  font-family: Open Sans;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.last_orders_title p:nth-child(3) {
+  margin-left: 25px;
+}
+
+.last_orders_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 23px;
+}
+
+.all_stores {
+  border-radius: 14.37px;
+  width: 212.17px;
+  height: 212.17px;
+  box-shadow: 0px 4px 30px 0.5px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 218, 59);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.all_stores h5 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+
+  margin-bottom: 4px;
+}
+.all_stores p {
+  color: rgb(87, 87, 87);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.all_stores button {
+  border-radius: 5.75px;
+  width: 150.72px;
+  height: 32.99px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* header right */
+
+.home_header_right {
+  width: 100%;
+  max-width: 479px;
+}
+
+.cashback_stores {
+  border-radius: 25px;
+  width: 1005;
+  background: rgb(255, 140, 140);
+  padding: 60px 50px;
+}
+
+.cashback_stores_title h3 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+.cashback_stores_title p,
+.cashback_stores_list p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.cashback_stores_list p {
+  margin-bottom: 20px;
+}
+
+.cashback_stores_lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 57px;
+}
+.cashback_stores_lists img {
+  cursor: pointer;
+}
+.get_cashback_input {
+  display: flex;
+  flex-direction: column;
+}
+.get_cashback_input input {
+  margin-bottom: 28px;
+}
+.main_input {
+  border-radius: 15px;
+  height: 54px;
+  text-indent: 15px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  color: #000;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.main_input::placeholder {
+  color: rgb(176, 176, 176);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.get_cashback_input button {
+  border-radius: 10px;
+  width: 233px;
+  height: 50px;
+  background: rgb(255, 218, 59);
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.exchange_money {
+  margin-top: 45px;
+  border-radius: 25px;
+  padding: 50px;
+  background: rgb(253, 21, 72);
+}
+
+.exchange_money h2 {
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.exchange_money_input button {
+  border-radius: 15px;
+  width: 57.88px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 218, 59);
+}
+.exchange_money_input {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  justify-content: space-between;
+}
+.exchange_money_input input {
+  max-width: 300px;
+  width: 100%;
+}
+.join_tg_channel {
+  margin-top: 40px;
+  border-radius: 10.86px;
+  height: 152px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgb(85, 165, 228), rgb(88, 140, 242) 100%);
+}
+.join_tg_channel_desc {
+  margin-left: 8px;
+}
+
+.join_tg_channel_desc p {
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.join_tg_channel_desc span {
+  color: rgb(182, 212, 255);
+  font-family: Open Sans;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.join_tg_channel_qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+.join_tg_channel_qr div {
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 86px;
+  height: 86px;
+  box-shadow: 0px 1.74px 6.08px 0.22px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  margin-bottom: 6px;
+}
+
+.join_tg_channel_qr div img {
+  width: 100%;
+}
+
+.join_tg_channel_qr p {
+  color: rgb(41, 97, 207);
+  font-family: Open Sans;
+  font-size: 6px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.join_tg_channel svg {
+  margin-top: -16px;
+}
+
+/* home nav */
+
+.home_navigation_title h3 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.home_navigation_item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  padding: 7px 0;
+}
+.home_navigation {
+  padding-top: 50px;
+}
+.home_navigation_item p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.mb_46 {
+  margin-bottom: 46px;
+}
+
+.home_navigation {
+  display: flex;
+  align-items: start;
+}
+.home_navigation_left {
+  max-width: 310px;
+  width: 100%;
+}
+.home_navigation_right {
+  max-width: 890px;
+  width: 100%;
+}
+.home_navigation_right .home_navigation_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.home_navigation_title p {
+  color: rgb(87, 87, 87);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.best_promo_title {
+  border-radius: 14.83px;
+  width: 205.44px;
+  height: 108.28px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.best_promo_title p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 20.77px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 6px;
+}
+.best_promo_title span {
+  color: rgb(87, 87, 87);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.best_promo_title img {
+  width: 114px;
+}
+.best_promo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 19px;
+  width: 100%;
+}
+.best_promo_desc {
+  border-radius: 14.83px;
+  padding: 15px 30px;
+  background: rgb(255, 228, 228);
+  height: 108.28px;
+}
+
+.best_promo_desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 74%;
+}
+.best_promo_desc div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.best_promo_desc h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.best_promo_desc p {
+  color: rgb(87, 87, 87);
+  font-family: Open Sans;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.best_promo_desc button {
+  border-radius: 7.42px;
+  width: 257.36px;
+  height: 51.97px;
+  background: rgb(255, 218, 59);
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.talk_to_us {
+  border-radius: 25px;
+  padding: 0 40px;
+  background: rgb(254, 170, 170);
+  height: 312px;
+  margin-top: 30px;
+}
+
+.talk_to_us_desc {
+  padding-top: 40px;
+}
+.talk_to_us .get_cashback_input .main_input {
+  max-width: 437px;
+  margin-bottom: 17px;
+}
+.talk_to_us .get_cashback_input button {
+  margin: 0;
+}
+.talk_to_us_desc .cashback_stores_title p {
+  margin-bottom: 21px;
+}
+.talk_to_us {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.talk_to_us_img {
+  position: relative;
+  height: 100%;
+}
+.talk_to_us_img svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.top_10_stores {
+  padding: 50px 0;
+}
+.block_title h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.top_10_stores_list,
+.cashback_stores_cards_list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px;
+}
+.top_10_store_card_img {
+  border-radius: 25px;
+  height: 209px;
+  background: rgb(217, 217, 217);
+  margin-bottom: 15px;
+}
+
+.top_10_store_card_price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.top_10_store_card_price h4 {
+  color: rgb(253, 21, 72);
+  font-family: Open Sans;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.top_10_store_card_price p {
+  color: rgb(176, 176, 176);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  text-decoration-line: line-through;
+}
+
+.top_10_store_card_desc p {
+  margin-bottom: 15px;
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.top_10_store_card_btn {
+  border-radius: 10px;
+  height: 53.97px;
+  width: 100%;
+  background: rgb(255, 218, 59);
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.cashback_stores_cards {
+  padding-bottom: 50px;
+}
+
+.download_snipet {
+  height: 252px;
+  padding-right: 0;
+
+}
+
+.download_snipet
+.talk_to_us_desc .cashback_stores_title p {
+    margin-bottom: 32px;
+}
+.snipet_docs {
+    padding-top: 50px;
+}
