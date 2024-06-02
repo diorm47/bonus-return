@@ -671,13 +671,271 @@
 .download_snipet {
   height: 252px;
   padding-right: 0;
-
 }
 
-.download_snipet
-.talk_to_us_desc .cashback_stores_title p {
-    margin-bottom: 32px;
+.download_snipet .talk_to_us_desc .cashback_stores_title p {
+  margin-bottom: 32px;
 }
 .snipet_docs {
-    padding-top: 50px;
+  padding-top: 50px;
+}
+
+.snipet_docs_dev {
+  margin-top: 11px;
+  margin-bottom: 33px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.snipet_docs_dev p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.snipet_docs_dev_list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.snipet_docs_dev_list div {
+  border-radius: 15px;
+  width: 119px;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  height: 42px;
+  gap: 10px;
+  box-shadow: 0px 4px 14px 0.5px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+}
+.snipet_docs_card {
+  border-radius: 20px;
+  height: 309px;
+  padding: 20px;
+  box-shadow: 0px 0px 30px 0.5px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+}
+
+.snipet_docs_card h3 {
+  color: rgb(253, 21, 72);
+  font-family: Open Sans;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.snipet_docs_card p {
+  color: rgb(255, 140, 140);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.snipet_docs_card span {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.snipet_docs_card .get_cashback_input {
+  margin-top: 30px;
+}
+.snipet_docs_cards {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 50px;
+}
+.snipet_docs_card {
+  width: 25%;
+}
+
+.snipet_docs_desc p {
+  color: rgb(255, 140, 140);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 57px;
+}
+
+.main_p p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+}
+
+.stores_rev_title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.stores_rev_title h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-right: 40px;
+}
+.stores_rev_title p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.stores_rev_title span {
+  color: rgb(87, 87, 87);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.stores_rev_filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.stores_rev_filter p {
+  border-radius: 8px;
+  padding: 4px 15px;
+  background: rgb(255, 228, 228);
+  cursor: pointer;
+}
+
+.stores_rev_cards,
+.prod_revs {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 57px;
+}
+.stores_rev_card {
+  border-radius: 25px;
+  padding: 27px;
+  box-shadow: 0px 4px 34px 1px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  height: 261px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.prod_rev_card {
+  border-radius: 25px;
+  height: 348px;
+  overflow: hidden;
+  background: rgb(248, 248, 248);
+}
+
+.prod_rev_card_img img {
+  width: 100%;
+  height: 162px;
+}
+.prod_rev_card_img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.prod_rev_card_desc {
+  padding: 13px 27px;
+}
+.prod_rev_card_author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.prod_rev_card_author div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.prod_rev_card_author p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+.prod_rev_card_author span {
+  color: rgb(87, 87, 87);
+}
+
+.prod_rev_card_desc_text h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.join_us {
+  border-radius: 25px;
+  height: 294px;
+  background: rgb(174, 216, 249);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 90px;
+}
+
+.join_us_left {
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.join_us_left h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.join_us_left button {
+  border-radius: 8.39px;
+
+  background: rgb(85, 165, 228);
 }

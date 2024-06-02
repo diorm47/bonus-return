@@ -4,6 +4,8 @@ import { ReactComponent as Search } from "../../assets/icons/search.svg";
 import { ReactComponent as Phone } from "../../assets/images/phone.svg";
 import { ReactComponent as TalkToUs } from "../../assets/icons/talk-tous.svg";
 import { ReactComponent as Snipet } from "../../assets/icons/snippet.svg";
+import { ReactComponent as Stars } from "../../assets/icons/stars.svg";
+import { ReactComponent as VK } from "../../assets/icons/vk.svg";
 
 import Card from "../../components/card/card";
 import megamarket from "../../assets/images/mega.png";
@@ -34,6 +36,18 @@ import child from "../../assets/icons/categories/children.png";
 import electro from "../../assets/icons/categories/electro.png";
 import sofa from "../../assets/icons/categories/sofa.png";
 import watch from "../../assets/icons/categories/watch.png";
+
+import chrome from "../../assets/icons/chrome.png";
+import opera from "../../assets/icons/opera.png";
+import mozila from "../../assets/icons/mozila.png";
+import safari from "../../assets/icons/safari.png";
+
+import ozonm from "../../assets/icons/ozonm.png";
+import market from "../../assets/icons/market.png";
+import rev1 from "../../assets/images/rev-1.png";
+import rev2 from "../../assets/images/rev-2.png";
+import rev3 from "../../assets/images/rev-3.png";
+import ava from "../../assets/images/ava.png";
 
 function Home() {
   return (
@@ -521,7 +535,207 @@ function Home() {
       </div>
       <div className="snipet_docs container">
         <div className="snipet_docs_title">
-            <h2>Как установить плагин</h2>
+          <h2>Как установить плагин</h2>
+        </div>
+        <div className="snipet_docs_dev">
+          <p>Расширение работает в</p>
+          <div className="snipet_docs_dev_list">
+            <div>
+              <img src={chrome} alt="" />
+              <p>Chrome</p>
+            </div>
+            <div>
+              <img src={opera} alt="" />
+              <p>Opera</p>
+            </div>
+            <div>
+              <img src={mozila} alt="" />
+              <p>Mozilla</p>
+            </div>
+            <div>
+              <img src={safari} alt="" />
+              <p>Safari</p>
+            </div>
+          </div>
+        </div>
+        <div className="snipet_docs_cards">
+          <div className="snipet_docs_card">
+            <h3>01</h3>
+            <p>Зайдите на страницу плагина</p>
+            <span>
+              для использования плагина обязательна регистрация в сервисе Bonus
+              Return
+            </span>
+            <div className="get_cashback_input">
+              <button>Перейти</button>
+            </div>
+          </div>
+          <div className="snipet_docs_card">
+            <h3>02</h3>
+            <p>Установите плагин</p>
+            <span>
+              Откройте расширение и закрепите Bonus Return на главной панели
+            </span>
+          </div>
+          <div className="snipet_docs_card">
+            <h3>03</h3>
+            <p>Получите токен</p>
+            <span>Нажмите на расширение и скопируйте ключ</span>
+          </div>
+          <div className="snipet_docs_card">
+            <h3>04</h3>
+            <p>Активируйте плагин</p>
+            <span>Вставьте токен и нажмите “Примениить”</span>
+          </div>
+        </div>
+        <div className="snipet_docs_desc">
+          <p>
+            Если установить плагин через магазин расширений Chrome не
+            получается, скачайте архив <br /> и извлеките из него папку с
+            файлами. Затем откройте ссылку в браузере Chrome
+            chrome://extensions/ <br /> и включите “Режим разработчика”/
+            Devoloped mode. Нажмите кнопку загрузки (Load Unpacked) и подгрузите
+            туда папку плагина из архива.
+          </p>
+        </div>
+      </div>
+      <div className="stores_rev container">
+        <div className="stores_rev_title">
+          <h2>Отзывы о магазинах с кэшбэком</h2>
+          <p>Отзывы: 0000</p>
+          <p>
+            <span>Вопросы: 0000</span>
+          </p>
+        </div>
+        <div className="stores_rev_filter main_p">
+          <p>Sela</p>
+          <p>Мегамаркет</p>
+          <p>Ozon</p>
+          <p>Wildberries</p>
+          <p>Другие магазины</p>
+        </div>
+        <div className="stores_rev_cards">
+          <div className="stores_rev_card main_p">
+            <img src={megamarket} alt="" />
+            <Stars />
+            <p>
+              В рамках спецификации современных стандартов, некоторые
+              особенности внутренней политики лишь добавляют фракционных ...
+            </p>
+          </div>
+          <div className="stores_rev_card main_p">
+            <img src={ozonm} alt="" />
+            <Stars />
+            <p>
+              В рамках спецификации современных стандартов, некоторые
+              особенности внутренней политики лишь добавляют фракционных ...
+            </p>
+          </div>
+          <div className="stores_rev_card main_p">
+            <img src={market} alt="" />
+            <Stars />
+            <p>
+              В рамках спецификации современных стандартов, некоторые
+              особенности внутренней политики лишь добавляют фракционных ...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="stores_rev  container">
+        <div className="stores_rev_title">
+          <h2>Обзоры на товары с кэшбэком</h2>
+        </div>
+        <div className="stores_rev_filter main_p">
+          <p>Популярные обзоры</p>
+          <p>Электроника</p>
+          <p>Красота и здоровье</p>
+          <p>Мода и стиль</p>
+          <p>Другие магазины</p>
+        </div>
+        <div className="prod_revs">
+          <div className="prod_rev_card">
+            <div className="prod_rev_card_img">
+              <img src={rev1} alt="" />
+            </div>
+            <div className="prod_rev_card_desc">
+              <div className="prod_rev_card_author">
+                <div>
+                  <img src={ava} alt="" />
+                  <p>Maria B</p>
+                </div>
+                <p>
+                  <span>Обзоры автора</span>
+                </p>
+              </div>
+              <div className="prod_rev_card_desc_text main_p">
+                <h2>Вы не поверите, что было...</h2>
+                <p>
+                  В рамках спецификации современных стандартов, некоторые
+                  особенности внутренней политики лишь добавляют фракционных ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="prod_rev_card">
+            <div className="prod_rev_card_img">
+              <img src={rev2} alt="" />
+            </div>
+            <div className="prod_rev_card_desc">
+              <div className="prod_rev_card_author">
+                <div>
+                  <img src={ava} alt="" />
+                  <p>Maria B</p>
+                </div>
+                <p>
+                  <span>Обзоры автора</span>
+                </p>
+              </div>
+              <div className="prod_rev_card_desc_text main_p">
+                <h2>Вы не поверите, что было...</h2>
+                <p>
+                  В рамках спецификации современных стандартов, некоторые
+                  особенности внутренней политики лишь добавляют фракционных ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="prod_rev_card">
+            <div className="prod_rev_card_img">
+              <img src={rev3} alt="" />
+            </div>
+            <div className="prod_rev_card_desc">
+              <div className="prod_rev_card_author">
+                <div>
+                  <img src={ava} alt="" />
+                  <p>Maria B</p>
+                </div>
+                <p>
+                  <span>Обзоры автора</span>
+                </p>
+              </div>
+              <div className="prod_rev_card_desc_text main_p">
+                <h2>Вы не поверите, что было...</h2>
+                <p>
+                  В рамках спецификации современных стандартов, некоторые
+                  особенности внутренней политики лишь добавляют фракционных ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="join_us container">
+        <div className="join_us_left">
+          <h2>
+            Вступай в самое большое <br />
+            кэшбэк сообщество
+          </h2>
+          <div className="get_cashback_input">
+            <button>Перейти в группу</button>
+          </div>
+        </div>
+        <div className="join_us_img">
+          <VK />
         </div>
       </div>
     </>
