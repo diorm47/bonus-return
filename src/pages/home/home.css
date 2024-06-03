@@ -1,3 +1,7 @@
+.home_page {
+  width: 100%;
+  overflow: hidden;
+}
 .home_header {
   display: flex;
   align-items: start;
@@ -1001,6 +1005,7 @@
     margin-left: -20px;
     width: 104.3%;
   }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -1315,7 +1320,7 @@
   .prod_revs,
   .snipet_docs_cards {
     margin-left: -20px;
-    width: 112.2%;
+    width: 112.5%;
   }
   .best_promo_desc h2,
   .best_promo_desc p {

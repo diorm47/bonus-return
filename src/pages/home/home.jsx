@@ -62,7 +62,7 @@ function Home() {
   };
   return (
     <>
-      <div className="">
+      <div className="home_page">
         <div className="home_header container">
           <div className="home_header_left">
             <div className="home_header_search_wrapper">
