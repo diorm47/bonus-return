@@ -5,6 +5,7 @@ import eng from "../../assets/icons/eng.png";
 import ru from "../../assets/icons/ru.png";
 import zn from "../../assets/icons/zn.png";
 import { NavLink } from "react-router-dom";
+import { ReactComponent as Menu } from "../../assets/icons/burger-menu.svg";
 
 function NavBar() {
   return (
@@ -27,6 +28,9 @@ function NavBar() {
           <div className="nav_wrapper_login">
             <button>Вход</button>
             <button>Регистрация</button>
+            <div className="nav_burger">
+            <Menu />
+          </div>
           </div>
           <div className="nav_lang_toggler">
             <div>
@@ -42,6 +46,7 @@ function NavBar() {
               <p>ZN</p>
             </div>
           </div>
+        
         </div>
       </div>
     </nav>

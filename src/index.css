@@ -31,3 +31,10 @@ button {
   max-width: 1200px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1230px) {
+  .container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

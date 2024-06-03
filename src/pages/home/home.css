@@ -5,7 +5,7 @@
   margin-bottom: 50px;
 }
 .home_header_left {
-  width: 100%;
+  width: 60%;
   max-width: 683px;
 }
 .home_header_search {
@@ -141,7 +141,7 @@
 
 .all_stores {
   border-radius: 14.37px;
-  width: 212.17px;
+
   height: 212.17px;
   box-shadow: 0px 4px 30px 0.5px rgba(0, 0, 0, 0.15);
   background: rgb(255, 218, 59);
@@ -190,13 +190,13 @@
 /* header right */
 
 .home_header_right {
-  width: 100%;
+  width: 40%;
   max-width: 479px;
 }
 
 .cashback_stores {
   border-radius: 25px;
-  width: 1005;
+  width: 100%;
   background: rgb(255, 140, 140);
   padding: 60px 50px;
 }
@@ -702,6 +702,9 @@
   align-items: center;
   gap: 20px;
 }
+.snipet_docs_card .get_cashback_input button {
+  width: 100%;
+}
 .snipet_docs_dev_list div {
   border-radius: 15px;
   width: 119px;
@@ -823,7 +826,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 40px;
+
+  flex-wrap: wrap;
 }
 .stores_rev_filter p {
   border-radius: 8px;
@@ -837,11 +841,13 @@
   display: flex;
   align-items: center;
   gap: 35px;
-  margin-bottom: 57px;
+  padding-bottom: 57px;
+  padding-top: 40px;
 }
 .stores_rev_card {
   border-radius: 25px;
   padding: 27px;
+  width: 375px;
   box-shadow: 0px 4px 34px 1px rgba(0, 0, 0, 0.1);
   background: rgb(255, 255, 255);
   height: 261px;
@@ -855,6 +861,8 @@
 .prod_rev_card {
   border-radius: 25px;
   height: 348px;
+  width: 375px;
+
   overflow: hidden;
   background: rgb(248, 248, 248);
 }
@@ -938,4 +946,346 @@
   border-radius: 8.39px;
 
   background: rgb(85, 165, 228);
+}
+.last_orders_section {
+  display: none;
+}
+
+@media only screen and (max-width: 1230px) {
+  .top_10_stores_list,
+  .cashback_stores_cards_list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .home_header,
+  .home_navigation {
+    flex-direction: column;
+  }
+  .home_header_left,
+  .home_header_right,
+  .home_navigation_left,
+  .home_navigation_right {
+    width: 100%;
+    max-width: 100%;
+  }
+  .home_header_left .last_orders {
+    display: none;
+  }
+  .home_header_left_steps {
+    margin: 0;
+  }
+  .last_orders_section {
+    display: block;
+  }
+  .home_navigation_title h3 br {
+    display: none;
+  }
+  .home_navigation {
+    gap: 50px;
+  }
+  .snipet_docs_cards {
+    flex-wrap: wrap;
+  }
+  .snipet_docs_card {
+    width: 275px;
+  }
+  .cashback_stores,
+  .exchange_money,
+  .join_tg_channel,
+  .talk_to_us,
+  .join_us {
+    margin-left: -20px;
+    width: 104.3%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .top_10_stores_list,
+  .cashback_stores_cards_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .join_us_img,
+  .talk_to_us_img {
+    display: none;
+  }
+  .stores_rev_cards,
+  .prod_revs {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .top_10_stores_list,
+  .cashback_stores_cards_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .snipet_docs_dev {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .snipet_docs_dev_list div {
+    width: 80px;
+    padding: 4px 6px;
+  }
+  .snipet_docs_dev_list div img {
+    width: 20px;
+  }
+  .snipet_docs_dev p {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .last_orders_list,
+  .top_10_stores_list,
+  .cashback_stores_cards_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search_descs p:nth-child(2) {
+    display: none;
+  }
+  .cashback_stores {
+    padding: 50px 20px 100px 20px;
+  }
+  .exchange_money {
+    padding: 20px 20px 30px 20px;
+    margin-top: -40px;
+    border-radius: 25px;
+  }
+  .join_tg_channel_phone {
+    display: none;
+  }
+  .join_tg_channel {
+    border-radius: 0;
+  }
+  .last_orders_title {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .last_orders_title h2 {
+    width: 100%;
+  }
+  .home_navigation_title p {
+    display: none;
+  }
+  .best_promo {
+    gap: 0;
+  }
+  .best_promo_title {
+    width: 40%;
+    height: 108px;
+    padding: 25px 15px;
+    margin-right: -20px;
+    position: relative;
+  }
+  .best_promo_title img {
+    width: 100%;
+  }
+  .best_promo_desc {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .best_promo_desc button {
+    width: 148px;
+    height: 34px;
+  }
+  .best_promo_desc h2 {
+    font-size: 14px;
+  }
+  .best_promo_desc p {
+    font-size: 8px;
+  }
+  .best_promo_desc div {
+    display: block;
+    height: auto;
+  }
+  .best_promo_desc {
+    width: 63%;
+  }
+  .talk_to_us {
+    padding: 30px 20px;
+    border-radius: 0;
+    height: auto;
+  }
+  .talk_to_us_desc {
+    padding: 0;
+  }
+  .talk_to_us_desc .get_cashback_input {
+    align-items: center;
+  }
+  .cashback_stores_title h3 br {
+    display: none;
+  }
+  .download_snipet svg {
+    display: none;
+  }
+  .stores_rev_title {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .join_us {
+    padding: 30px 20px;
+    height: auto;
+    border-radius: 0;
+  }
+  .join_us_left {
+    padding: 0;
+  }
+  .join_us_left .get_cashback_input {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .home_header_search_wrapper {
+    margin-bottom: 30px;
+  }
+  .home_header_left_title h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .home_header_left_steps p {
+    font-size: 11px;
+  }
+  .home_header_left_steps {
+    gap: 13px;
+  }
+  .home_header_left_steps br {
+    display: none;
+  }
+  .home_header_left_steps div {
+    width: 103px;
+    height: 69px;
+    padding: 10px;
+  }
+  .cashback_stores_title h3 {
+    font-size: 24px;
+  }
+  .cashback_stores_title p {
+    margin-bottom: 30px;
+  }
+  .cashback_stores_lists {
+    gap: 8px;
+  }
+  .cashback_stores_lists img {
+    width: 18%;
+  }
+  .exchange_money h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .exchange_money h2 br {
+    display: none;
+  }
+  .exchange_money_input input {
+    width: 76%;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+
+    background: rgb(255, 255, 255);
+  }
+  .join_tg_channel {
+    margin-top: 30px;
+    height: 107px;
+  }
+  .last_orders_list {
+    gap: 19px;
+  }
+  .all_stores {
+    border-radius: 10.7px;
+    width: 158px;
+    height: 158px;
+    box-shadow: 0px 2.98px 22.34px 0.37px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 218, 59);
+  }
+  .all_stores p {
+    margin-bottom: 25px;
+    font-size: 9px;
+  }
+  .all_stores h5 {
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+  .all_stores button {
+    width: 112.24px;
+    height: 24.56px;
+    font-size: 11px;
+  }
+  .home_navigation_left h3 {
+    font-size: 20px;
+    margin-bottom: 27px;
+  }
+  .mb_46 {
+    margin-bottom: 30px;
+  }
+  .home_navigation_right .home_navigation_title h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .last_orders_list,
+  .top_10_stores_list,
+  .cashback_stores_cards_list {
+    gap: 19px;
+  }
+  .top_10_store_card_img {
+    height: 158px;
+  }
+  .download_snipet {
+    margin: 0;
+  }
+  .snipet_docs_dev_list div {
+    width: 79px;
+    height: 28px;
+    border-radius: 10.03px;
+
+    box-shadow: 0px 2.67px 9.36px 0.33px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+  }
+  .snipet_docs_dev_list {
+    gap: 11px;
+  }
+  .snipet_docs_desc p {
+    margin-bottom: 50px;
+  }
+  .stores_rev_title h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  .join_us_left h2 {
+    font-size: 24px;
+  }
+  .cashback_stores,
+  .exchange_money,
+  .join_tg_channel,
+  .talk_to_us,
+  .join_us,
+  .stores_rev_cards,
+  .prod_revs, .snipet_docs_cards {
+    margin-left: -20px;
+    width: 112.2%;
+  }
+  .best_promo_desc h2,
+  .best_promo_desc p {
+    text-align: center;
+  }
+  .best_promo_desc {
+    padding-right: 20px;
+  }
+  .talk_to_us_desc h3,
+  .block_title h2 {
+    font-size: 20px;
+  }
+  .cashback_stores_title p br {
+    display: none;
+  }
+  .download_snipet {
+    background: rgb(255, 140, 140);
+  }
 }
