@@ -6,7 +6,9 @@ import { ReactComponent as TalkToUs } from "../../assets/icons/talk-tous.svg";
 import { ReactComponent as Snipet } from "../../assets/icons/snippet.svg";
 import { ReactComponent as Stars } from "../../assets/icons/stars.svg";
 import { ReactComponent as VK } from "../../assets/icons/vk.svg";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import Card from "../../components/card/card";
 import megamarket from "../../assets/images/mega.png";
 
@@ -50,10 +52,18 @@ import rev3 from "../../assets/images/rev-3.png";
 import ava from "../../assets/images/ava.png";
 
 function Home() {
+  const settings = {
+    arrows: false,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: true,
+    slidesToShow: 1,
+    speed: 1000,
+  };
   return (
     <>
-      <div className="container">
-        <div className="home_header">
+      <div className="">
+        <div className="home_header container">
           <div className="home_header_left">
             <div className="home_header_search_wrapper">
               <div className="home_header_search">
@@ -192,7 +202,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="last_orders last_orders_section">
+        <div className="last_orders last_orders_section container">
           <div className="last_orders_title">
             <h2>Последние заказы</h2>
             <p>Заказ: 00 сек. назад</p>
@@ -218,7 +228,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="home_navigation">
+        <div className="home_navigation container">
           <div className="home_navigation_left">
             <div className="home_navigation_title">
               <h3>
@@ -397,7 +407,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="top_10_stores">
+        <div className="top_10_stores container">
           <div className="block_title">
             <h2>ТОП 10 повышенный кэшбэк на маркетплейсах</h2>
           </div>
@@ -514,7 +524,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="cashback_stores_cards">
+        <div className="cashback_stores_cards container">
           <div className="block_title">
             <h2>Магазины с кэшбэком</h2>
           </div>
@@ -545,7 +555,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="talk_to_us download_snipet">
+        <div className="talk_to_us download_snipet container">
           <div className="talk_to_us_desc">
             <div className="cashback_stores_title">
               <h3>Устанавливайте расширение Bonus Return</h3>
@@ -560,7 +570,7 @@ function Home() {
           </div>
           <Snipet />
         </div>
-        <div className="snipet_docs">
+        <div className="snipet_docs container">
           <div className="snipet_docs_title">
             <h2>Как установить плагин</h2>
           </div>
@@ -615,6 +625,50 @@ function Home() {
               <span>Вставьте токен и нажмите “Примениить”</span>
             </div>
           </div>
+          <div className="cards_carousel">
+            <Slider {...settings}>
+              <div>
+                <div className="snipet_docs_card">
+                  <h3>01</h3>
+                  <p>Зайдите на страницу плагина</p>
+                  <span>
+                    для использования плагина обязательна регистрация в сервисе
+                    Bonus Return
+                  </span>
+                  <div className="get_cashback_input">
+                    <button>Перейти</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                {" "}
+                <div className="snipet_docs_card">
+                  <h3>02</h3>
+                  <p>Установите плагин</p>
+                  <span>
+                    Откройте расширение и закрепите Bonus Return на главной
+                    панели
+                  </span>
+                </div>
+              </div>
+              <div>
+                {" "}
+                <div className="snipet_docs_card">
+                  <h3>03</h3>
+                  <p>Получите токен</p>
+                  <span>Нажмите на расширение и скопируйте ключ</span>
+                </div>
+              </div>
+              <div>
+                {" "}
+                <div className="snipet_docs_card">
+                  <h3>04</h3>
+                  <p>Активируйте плагин</p>
+                  <span>Вставьте токен и нажмите “Примениить”</span>
+                </div>
+              </div>
+            </Slider>
+          </div>
           <div className="snipet_docs_desc">
             <p>
               Если установить плагин через магазин расширений Chrome не
@@ -627,21 +681,21 @@ function Home() {
           </div>
         </div>
         <div className="stores_rev">
-          <div className="stores_rev_title">
+          <div className="stores_rev_title container">
             <h2>Отзывы о магазинах с кэшбэком</h2>
             <p>Отзывы: 0000</p>
             <p>
               <span>Вопросы: 0000</span>
             </p>
           </div>
-          <div className="stores_rev_filter main_p">
+          <div className="stores_rev_filter main_p container">
             <p>Sela</p>
             <p>Мегамаркет</p>
             <p>Ozon</p>
             <p>Wildberries</p>
             <p>Другие магазины</p>
           </div>
-          <div className="stores_rev_cards">
+          <div className="stores_rev_cards container">
             <div className="stores_rev_card main_p">
               <img src={megamarket} alt="" />
               <Stars />
@@ -667,19 +721,60 @@ function Home() {
               </p>
             </div>
           </div>
+
+          <div className="cards_carousel">
+            <Slider {...settings}>
+              <div>
+                {" "}
+                <div className="stores_rev_card main_p car_cards">
+                  <img src={megamarket} alt="" />
+                  <Stars />
+                  <p>
+                    В рамках спецификации современных стандартов, некоторые
+                    особенности внутренней политики лишь добавляют фракционных
+                    ...
+                  </p>
+                </div>
+              </div>
+              <div>
+                {" "}
+                <div className="stores_rev_card main_p car_cards">
+                  <img src={ozonm} alt="" />
+                  <Stars />
+                  <p>
+                    В рамках спецификации современных стандартов, некоторые
+                    особенности внутренней политики лишь добавляют фракционных
+                    ...
+                  </p>
+                </div>
+              </div>
+              <div>
+                {" "}
+                <div className="stores_rev_card main_p car_cards">
+                  <img src={market} alt="" />
+                  <Stars />
+                  <p>
+                    В рамках спецификации современных стандартов, некоторые
+                    особенности внутренней политики лишь добавляют фракционных
+                    ...
+                  </p>
+                </div>
+              </div>
+            </Slider>
+          </div>
         </div>
         <div className="stores_rev">
-          <div className="stores_rev_title">
+          <div className="stores_rev_title container">
             <h2>Обзоры на товары с кэшбэком</h2>
           </div>
-          <div className="stores_rev_filter main_p">
+          <div className="stores_rev_filter main_p container">
             <p>Популярные обзоры</p>
             <p>Электроника</p>
             <p>Красота и здоровье</p>
             <p>Мода и стиль</p>
             <p>Другие магазины</p>
           </div>
-          <div className="prod_revs">
+          <div className="prod_revs container">
             <div className="prod_rev_card">
               <div className="prod_rev_card_img">
                 <img src={rev1} alt="" />
@@ -753,8 +848,92 @@ function Home() {
               </div>
             </div>
           </div>
+
+          <div className="cards_carousel">
+            <Slider {...settings}>
+              <div>
+                <div className="prod_rev_card car_cards">
+                  <div className="prod_rev_card_img">
+                    <img src={rev1} alt="" />
+                  </div>
+                  <div className="prod_rev_card_desc">
+                    <div className="prod_rev_card_author">
+                      <div>
+                        <img src={ava} alt="" />
+                        <p>Maria B</p>
+                      </div>
+                      <p>
+                        <span>Обзоры автора</span>
+                      </p>
+                    </div>
+                    <div className="prod_rev_card_desc_text main_p">
+                      <h2>Вы не поверите, что было...</h2>
+                      <p>
+                        В рамках спецификации современных стандартов, некоторые
+                        особенности внутренней политики лишь добавляют
+                        фракционных ...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="prod_rev_card car_cards">
+                  <div className="prod_rev_card_img">
+                    <img src={rev2} alt="" />
+                  </div>
+                  <div className="prod_rev_card_desc">
+                    <div className="prod_rev_card_author">
+                      <div>
+                        <img src={ava} alt="" />
+                        <p>Maria B</p>
+                      </div>
+                      <p>
+                        <span>Обзоры автора</span>
+                      </p>
+                    </div>
+                    <div className="prod_rev_card_desc_text main_p">
+                      <h2>Вы не поверите, что было...</h2>
+                      <p>
+                        В рамках спецификации современных стандартов, некоторые
+                        особенности внутренней политики лишь добавляют
+                        фракционных ...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="prod_rev_card car_cards">
+                  <div className="prod_rev_card_img">
+                    <img src={rev3} alt="" />
+                  </div>
+                  <div className="prod_rev_card_desc">
+                    <div className="prod_rev_card_author">
+                      <div>
+                        <img src={ava} alt="" />
+                        <p>Maria B</p>
+                      </div>
+                      <p>
+                        <span>Обзоры автора</span>
+                      </p>
+                    </div>
+                    <div className="prod_rev_card_desc_text main_p">
+                      <h2>Вы не поверите, что было...</h2>
+                      <p>
+                        В рамках спецификации современных стандартов, некоторые
+                        особенности внутренней политики лишь добавляют
+                        фракционных ...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Slider>
+          </div>
         </div>
-        <div className="join_us">
+
+        <div className="join_us container">
           <div className="join_us_left">
             <h2>
               Вступай в самое большое <br />
