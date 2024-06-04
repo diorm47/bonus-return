@@ -1,5 +1,12 @@
-.home_header_left {
-    padding-top: 34px;
+.sellers_header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 50px !important;
+}
+.sellers_header_left {
+  padding-top: 34px;
+  width: 55%;
 }
 .home_header_left_title h2 {
   color: rgb(0, 0, 0);
@@ -20,4 +27,230 @@
   letter-spacing: 1%;
   text-align: left;
   margin-bottom: 50px;
+}
+
+.home_header_left_stats {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.home_header_left_stat_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home_header_left_stat_item h3 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.home_header_left_stat_item div {
+  margin-bottom: 4px;
+  border-radius: 10px;
+  padding: 8px 20px 8px 20px;
+  background: rgb(255, 218, 59);
+}
+
+.home_header_left_stat_item p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.home_header_left_stat_item span {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.home_header_left_stat_item h4 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: center;
+}
+.home_header_left_stat_item_online div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sellers_header_left_filters h3 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+.sellers_header_left_filters .stores_rev_filter {
+  margin: 0 !important;
+}
+
+.sellers_header_date {
+  width: 45%;
+  max-width: 477px;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0px 4px 34px 1px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+}
+
+.sellers_header_date_title h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.sellers_header_date_title h3 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.sellers_header_dates {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.sellers_header_dates p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.sellers_header_dates span {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 50%;
+}
+
+.sellers_header_date_selected span {
+  background: rgb(248, 157, 64);
+}
+.sellers_header_date_disabled p,
+.sellers_header_date_disabled span {
+  color: rgb(148, 148, 148);
+}
+.sellers_header_date_weekend p {
+  color: rgb(253, 21, 72);
+}
+.sellers_header_hours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.sellers_header_hours div {
+  box-sizing: border-box;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+  width: 93px;
+  height: 51px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sellers_header_hours p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+}
+
+.sellers_header_hour_selected {
+  border: 1px solid transparent !important;
+  background: rgb(248, 157, 64);
+}
+.sellers_header_date_consult h4 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 0%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.sellers_header_date_consult .exchange_money_input {
+  margin-bottom: 20px;
+}
+.sellers_header_date_consult input {
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  max-width: 344px;
+  background: rgb(255, 255, 255);
+}
+.sellers_header_date_consult p {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.sellers_quests h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 121.9%;
+  letter-spacing: 1%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.sellers_promos .best_promo_desc {
+  width: 80%;
 }

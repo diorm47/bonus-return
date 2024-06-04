@@ -13,12 +13,16 @@ function NavBar() {
     <nav>
       <div className="container nav_wrapper">
         <div className="nav_wrapper_icon">
-          <img src={logo} alt="" />
-          <h2>Bonus Return</h2>
+          <NavLink to="/">
+            <img src={logo} alt="" />
+          </NavLink>
+          <NavLink to="/">
+            <h2>Bonus Return</h2>
+          </NavLink>
           <p>настоящий кэшбэк</p>
         </div>
         <div className="nav_wrapper_menu">
-          <NavLink to="">
+          <NavLink to="/sellers">
             <p>Селлерам</p>
           </NavLink>
           <NavLink to="">
@@ -65,14 +69,14 @@ function NavBar() {
               <p>ZN</p>
             </div>
           </div>
-          <Menu  onClick={() => setMenu(!menu)} />
+          <Menu onClick={() => setMenu(!menu)} />
         </div>
 
         <div className="nav_wrapper_menu">
           <NavLink to="">
             <p>Главная</p>
           </NavLink>
-          <NavLink to="">
+          <NavLink to="/sellers">
             <p>Селлерам</p>
           </NavLink>
           <NavLink to="">
